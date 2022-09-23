@@ -37,7 +37,7 @@ def different_shapes():
     for i in range(3, 11, 1):
         degree = 360
         degree /= i
-        subish.color(random.choice(r, g, b))
+        subish.color(random_color())
         subish.pensize(i)
         for j in range(i):
             subish.forward(100)
@@ -63,6 +63,6 @@ def spirograph(size):
         subish.setheading(subish.heading() + size)
 
 
-#spirograph(6)
+spirograph(6)
 
 screen.exitonclick()
